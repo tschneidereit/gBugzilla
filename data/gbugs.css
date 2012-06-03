@@ -1,0 +1,662 @@
+.bz_comments {
+    background: none repeat scroll 0% 0% rgb(200, 200, 200);
+    font-family: "Helvetica Neue","Nimbus Sans L",Arial,sans-serif;
+    padding-left: 1em;
+    padding-right: 1em;
+    overflow: auto;
+}
+
+.bz_comment_head, .bz_first_comment_head {
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.bz_comment_actions, .bz_comment_number, .bz_private_checkbox {
+    float: right;
+}
+.bz_comment_user, .bz_comment_time, .bz_comment_number, .bz_private_checkbox, .bz_comment_actions {
+    margin: 0px 0.5em;
+}
+
+.bz_comment_text {
+    white-space: pre-wrap;
+}
+
+span.assignee {
+    padding-left: 10px;
+    color: #E41313;
+}
+
+span.reporter {
+    padding-left: 10px;
+    color: #888;
+}
+
+/** Hide CSS? **/
+.setting-hide-cc .hide-cc {
+    display: none;
+}
+
+/** Style comments **/
+
+
+.git_style .bz_comment {
+    border-radius:2px 2px 2px 2px;
+    color: black;
+    background-color:#EEEEEE;
+    border:1px solid #CCCCCC;
+    padding:3px;
+    margin-left:15px;
+    margin-bottom:1em;
+    width: 677px;
+}
+
+.git_style .bz_first_comment,
+.git_style .no-first-comment .bz_comment {
+    margin-left:0;
+    width: 692px;
+}
+
+.git_style .bz_first_comment_head,
+.git_style .bz_comment_head {
+    border:1px solid #CCCCCC;
+    font-size:11px;
+    overflow:auto;
+    padding:5px;
+    background: -moz-linear-gradient(
+        center top,
+        rgb(241,247,248) 28%,
+        rgb(221,233,236) 64%
+        ) repeat scroll 0% 0% transparent;
+}
+
+.git_style .bz_first_comment_head,
+.git_style .bz_reporter .bz_comment_head {
+    background: -moz-linear-gradient(
+        center top,
+        #E6F4EC 28%,
+        #D8E6DE 64%
+        ) repeat scroll 0% 0% transparent;
+}
+
+.git_style .bz_comment_actions, .git_style .bz_comment_number {
+    color:#999;
+    padding-top:7px;
+}
+
+.git_style .bz_comment_actions a, .git_style .bz_comment_number a {
+    color:#666;
+    text-decoration:none;
+}
+
+.git_style .bz_comment_actions a:hover, .git_style .bz_comment_number a:hover {
+    color:#444;
+    text-decoration:underline;
+}
+
+.git_style .bz_comment_text {
+    background-color:#FFFFFF;
+    border-left:1px solid #CCCCCC;
+    border-right:1px solid #CCCCCC;
+    border-bottom:1px solid #CCCCCC;
+    margin:0;
+    padding:10px;
+    width:655px;
+}
+
+.git_style .bz_first_comment .bz_comment_text,
+.git_style .no-first-comment .bz_comment_text {
+    width:670px;
+}
+
+.git_style .bz_comment_user {
+    display: inline-block; padding-top: 7px;
+
+}
+
+.git_style .bz_comment_user a.email {
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+}
+
+.git_style .bz_comment_time {
+    color:#999;
+    font-weight: normal;
+}
+
+/** Inline changes **/
+.git_style .ih_history .bz_comment_head {
+    background: none repeat scroll 0% 0% transparent;
+    border: 0pt none;
+    display: inline;
+    padding: 0;
+}
+
+.git_style .bz_comment.ih_history {
+    font-size: 11px;
+    padding: 5px 5px 0 5px;
+}
+
+.git_style .bz_comment.ih_history .ih_history_item {
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.git_style .bz_comment.ih_history .bz_comment_user {
+    padding-top: 0;
+}
+
+.git_style .bz_comment .ih_inlinehistory {
+    background-color: #F7F7F7;
+    border-color: -moz-use-text-color #CCCCCC #CCCCCC;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    font-size: 11px;
+    padding: 3px;
+}
+
+/** Gravatar **/
+
+
+.git_style .bz_comment_head img.gravatar,
+.git_style .bz_first_comment_head img.gravatar {
+    background-color:#FFFFFF;
+    border:1px solid #BBBBBB;
+    padding:2px;
+    margin-right:5px;
+}
+
+
+.bz_comment_head img.gravatar,
+.bz_first_comment_head img.gravatar {
+    height:25px;
+}
+
+.git_style .bz_comment_head img.gravatar,
+.git_style .bz_first_comment_head img.gravatar {
+    float:left;
+}
+
+/** Comment Overflow **/
+
+.bzJS-commentoverflow .bz_comment pre {
+    overflow-x: auto;
+}
+
+/** Remove Access Keys **/
+
+.bzJS-removeaccesskeys .accessKey u {
+    text-decoration: none;
+}
+
+/** Image gallery **/
+
+.img-gal{
+    overflow:auto;
+    width:100%;
+}
+
+.git_style .img-gal{
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    overflow:auto;
+    padding:20px 0 0 20px;
+    background-color:#F1F7F8;
+    width:655px;
+}
+
+.git_style .bz_first_comment .img-gal {
+    background-color:#F3FAF6;
+    width:670px;
+}
+
+.img-gal a {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    padding: 4px;
+    float: left;
+    margin:0 20px 20px 0;
+    border:1px solid #ddd;
+    background-color: #fff;
+}
+
+.img-gal a:hover {
+    border: 1px solid #ccc;
+}
+
+.img-gal a img {
+    position: absolute;
+    margin: auto;
+    max-height: 100px;
+    max-width: 100px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+
+/* Changes */
+
+.git_style .changes {
+    color:#555555;
+    margin-left:20px;
+    padding-top:10px;
+}
+
+.git_style .changes th {
+    border-bottom:1px solid #DDDDDD;
+    color:#666666;
+    padding:0 30px 0 10px;
+    font-size:11px;
+    text-align:left;
+}
+
+.git_style .changes td {
+    font-size:11px;
+    padding:0 30px 0 10px;
+}
+
+.history {
+    background-color:#F3F3F3;
+    border-bottom:1px solid #DDDDDD;
+    border-top:2px solid #DDDDDD;
+    font-size:12px;
+    margin-bottom:10px;
+    padding:5px;
+}
+
+.bz_comment .history {
+    background-color: transparent;
+    border: medium none;
+    color: #888888;
+    margin-bottom: 0;
+    padding: 10px 0 0;
+}
+
+.git_style .history {
+    -moz-border-radius:3px 3px 3px 3px;
+    background-color:#EEEEEE;
+    border:1px solid #DDDDDD;
+    color:#555555;
+    font-size:10px;
+    margin:0 0 1em 15px;
+    padding:5px 10px;
+    width:663px;
+    font-family:verdana;
+}
+
+.git_style .bz_comment .history {
+    padding:0 0 10px 0;
+    color:#888;
+    border:none;
+    background-color:#fff;
+    margin:0;
+    border-left: 1px solid #CCCCCC;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    border-right: 1px solid #CCCCCC;
+    padding: 6px;
+    width: auto;
+}
+
+.git_style #attachment_table {
+    width:700px;
+}
+
+
+
+/** Git stuff **/
+
+.git_style .git-body {
+background-color:#F9F9F9;
+border-bottom:1px solid #CCCCCC;
+border-left:1px solid #CCCCCC;
+border-right:1px solid #CCCCCC;
+padding:10px;
+width:auto;
+}
+
+.git-head {
+background-color:#EAF2F5;
+border:1px solid #BEDCE7;
+padding:10px;
+}
+
+.git-head p {
+	margin-top:0;
+}
+
+.git-head span {
+	font-size:11px;
+	color:#888;
+}
+
+.git-head span strong {
+	color:#666;
+}
+
+.git tr {
+	border-top:1px solid #ddd;
+}
+.git {
+background-color:#FFFFFF;
+border-bottom:1px solid #DDDDDD;
+border-collapse:collapse;
+margin:10px 0 0;
+width:100%;
+}
+
+.git .changes_box {
+position:relative;
+}
+
+.git td .changes_box div {
+    display:none;
+}
+
+.git td:hover .changes_box div {
+-webkit-border-radius:4px;
+-moz-border-radius:4px;
+background-color:black;
+color:#FFFFFF;
+font-size:10px;
+left:-165px;
+opacity:0.8;
+padding:2px 3px;
+position:absolute;
+text-align:center;
+top:0;
+width:150px;
+display:block;
+}
+
+.git .changes_box strong {
+color:#444444;
+display:block;
+float:left;
+padding-right:5px;
+padding-top:1px;
+text-align:right;
+width:25px;
+
+}
+
+.git td.changes_td {
+width:80px;
+}
+
+.git td {
+	padding:5px;
+font-size:11px;
+}
+
+
+.git td.add .stat-icon {
+background-position:0 0;
+}
+
+.git td.modify .stat-icon {
+background-position:0px -50px;
+}
+
+.git td.remove .stat-icon {
+background-position:0px -100px;
+}
+
+.git td .stat-icon {
+background:url("http://github.com/images/modules/commit/file_modes.png") no-repeat scroll 0 0 transparent;
+display:block;
+height:19px;
+text-indent:-9999px;
+width:20px;
+}
+
+.gb, .ga, .gd {
+-moz-border-radius:2px 2px 2px 2px;
+background-color:#DDD;
+float:left;
+height:8px;
+margin-right:2px;
+margin-top:5px;
+width:8px;
+}
+
+.ga {
+	background-color:#61C423
+}
+.gd {
+	background-color:#C52323
+}
+
+
+/* Lightbox */
+
+
+.lb {
+    background-color: #FFFFFF;
+    border: 1px solid #666666;
+    box-shadow: 0 0 10px #555555;
+    -moz-box-shadow: 0 0 10px #555555;
+    padding: 10px;
+    max-width: 90%;
+    -moz-box-sizing: border-box;
+    margin: 20px auto;
+}
+
+.overlay2 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.overlay {
+background:none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+height:100%;
+left:0;
+position:fixed;
+text-align:center;
+top:0;
+width:100%;
+}
+
+.opts {
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: bold;
+    left: 0;
+    padding: 5px;
+    position: fixed;
+    text-shadow: 1px 1px 1px #000000;
+    top: 0;
+    z-index: 1000;
+}
+
+.opts a {
+text-decoration:none;
+color:#fff;
+}
+
+.lb, .overlay {
+    -moz-transition: opacity 0.3s ease;
+}
+
+
+.quickmodal {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    color: #FFFFFF;
+    left: 50%;
+    margin-left: -315px;
+    margin-top: 100px;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 600px;
+}
+
+.shortcuts tr:first-child th {
+    padding-top: 0;
+}
+.shortcuts th {
+    padding-top: 20px;
+    text-align: left;
+    color: #8895B7;
+    border-bottom: 1px dotted #888;
+    padding-bottom: 3px;
+}
+
+.shortcuts table {
+    float: left;
+    border-collapse: collapse;
+    margin: 10px;
+    width: 280px;
+}
+
+.shortcuts .left {
+    text-align: right;
+    padding-right: 5px;
+    min-width: 70px;
+}
+
+.shortcuts .left strong {
+    color: #8895B7;
+    font-weight: bold;
+}
+
+.shortcuts .left em {
+    font-size: 0.7em;
+    font-style: normal;
+    font-weight: bold;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+
+.notify {
+    background-color: #990505;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    margin-left: 10px;
+    padding: 2px 5px;
+    position: relative;
+}
+
+.notify:before {
+    border: 5px solid transparent;
+    border-color: transparent #990505 transparent transparent;
+    content: " ";
+    height: 0;
+    left: -9px;
+    margin-top: -6px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+
+.show_new {
+    color: red;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-right: 5px;
+    text-transform: uppercase;
+}
+
+#bugzilla-body .fileit {
+    width: 600px;
+    margin: auto;
+    margin-bottom: 1em;
+    border-bottom: 1px dotted #ccc;
+    padding: 1em 0;
+}
+
+#fileit_quick .light {
+   padding-top: 10px;
+   font-size: 0.8em;
+   color: #CCC;
+   text-align: center;
+}
+
+.fileit {
+    text-align: center;
+    position: relative;
+}
+
+.fileit input {
+    width: 350px;
+    border: 1px solid #AAAAAA;
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.fileit button {
+    background-color: #DDDDDD;
+    border: 1px solid #AAA;
+    color: #555555;
+    font-weight: bold;
+    padding: 4px 10px;
+    text-shadow: 1px 1px #FFFFFF;
+    font-size: 13px;
+}
+
+.fileit ul {
+    position: absolute;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #999999;
+    border-top: 0 none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.fileit ul li {
+    padding: 5px;
+    font-size: 0.85em;
+    text-align: left;
+    cursor: pointer;
+}
+
+.fileit ul li:hover {
+    background-color: #ddd !important;
+}
+
+.fileit ul li.active {
+    background-color: #eee;
+}
+.fileit ul li span {
+    color: #888;
+    font-size: 0.9em;
+    width: 120px;
+    display: inline-block;
+}
+
+.fileit ul li strong {
+    font-weight: normal;
+    color: #000;
+}
+
+/* Arrow for up/down keyboard shortcuts */
+.sorttable_body tr.is-selected .first-child a {
+    position: relative;
+}
+.sorttable_body tr.is-selected .first-child a:before {
+     border-color: transparent transparent transparent #666666;
+     border-style: solid;
+     border-width: 5px;
+     content: " ";
+     display: block;
+     height: 0;
+     left: -11px;
+     position: absolute;
+     top: 5px;
+     width: 0;
+}
