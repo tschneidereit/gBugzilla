@@ -1,9 +1,9 @@
 {
-    "name": "gbugs", 
+    "name": "gbugzilla", 
     "license": "MPL 2.0", 
-    "author": "", 
+    "author": "Till Schneidereit (http://www.tillschneidereit.de) <tschneidereit@gmail.com>", 
     "version": "0.1", 
-    "fullName": "gbugs", 
+    "fullName": "gBugzilla", 
     "id": "jid1-AMgLfxEL777GKw", 
-    "description": "a basic add-on"
+    "description": "Integrates display of Bugzilla bugs into the Gmail online interface"
 }
